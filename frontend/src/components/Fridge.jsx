@@ -458,7 +458,7 @@ export default function Fridge({ onBack, onSelectRecipe }) {
                     );
                   })}
                     );
-                  })}
+
                 </div>
               </div>
             )}

@@ -382,11 +382,11 @@ export default function Fridge({ onBack, onSelectRecipe }) {
                         {expandedCategories[category] && (
                           <div className="category-items">
                             {filteredIngredients.map(ing => {
-                            const input = ingredientInputs[ing.id] || { quantity: '', expiration: '' };
-                            const isSelected = selectedIngredients[ing.id] || false;
-                            const hasItem = isFridgeContainsIngredient(ing.name);
-                            return (
-                              <div key={ing.id} className="ingredient-row">
+                              const input = ingredientInputs[ing.id] || { quantity: '', expiration: '' };
+                              const isSelected = selectedIngredients[ing.id] || false;
+                              const hasItem = isFridgeContainsIngredient(ing.name);
+                              return (
+                                <div key={ing.id} className="ingredient-row">
                                 <div className="ingredient-row-header">
                                   <input
                                     type="checkbox"
@@ -451,10 +451,12 @@ export default function Fridge({ onBack, onSelectRecipe }) {
                                 )}
                               </div>
                             );
-                          })}
-                        </div>
-                      )}
-                    </div>
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                     );
                   })}
                 </div>

@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 
-**Aplikace běží na:** https://personal-card-wine.vercel.app
+**Aplikace běží na:** [zlatalednice.vercel.app](https://zlatalednice.vercel.app/)
 
 ## Popis projektu
 

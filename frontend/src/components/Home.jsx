@@ -14,7 +14,21 @@ export default function Home({ onEnter }) {
           
           <h1 className="hero-title">ZLATÁ LEDNICE</h1>
           <p className="hero-subtitle">Tvůj chytrý asistent pro správu lednice</p>
-          <p className="hero-description">Přestaň plýtvat jídlem. Získej jedinečné recepty na základě toho, co máš doma.</p>
+          <p className="hero-description">Nikdy už nevyhazuj zkažené jídlo. Ušetři tisíce korun ročně a objevuj úžasné recepty přímo z ingrediencí, které už máš doma.</p>
+          <div className="hero-stats">
+            <div className="stat-item">
+              <span className="stat-number">30%</span>
+              <span className="stat-label">Méně odpadu</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">5000+</span>
+              <span className="stat-label">Kč ušetříš ročně</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">0</span>
+              <span className="stat-label">Zkažených potravin</span>
+            </div>
+          </div>
           
           <button onClick={onEnter} className="enter-btn">
             <span>PROZKOUMAT</span>

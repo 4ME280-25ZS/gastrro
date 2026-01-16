@@ -59,10 +59,42 @@ export default function Register({ onSwitchToLogin }) {
 
   return (
     <div className="auth-container">
-      <div className="auth-box">
-        <img src={logo} alt="Zlatá Lednice" className="auth-logo" />
-        <h1 className="app-title">Zlatá Lednice</h1>
-        <h2>Registrace</h2>
+      <div className="auth-layout">
+        <div className="auth-benefits">
+          <h3>Začni šetřit už dnes!</h3>
+          <div className="benefit-item">
+            <span className="benefit-icon">🎯</span>
+            <div>
+              <h4>Registrace zdarma</h4>
+              <p>Bez poplatků, bez omezení</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">🔒</span>
+            <div>
+              <h4>Bezpečné uložení dat</h4>
+              <p>Tvoje data jsou v bezpečí</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">⚡</span>
+            <div>
+              <h4>Okamžitý přístup</h4>
+              <p>Začni ihned po registraci</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">🌍</span>
+            <div>
+              <h4>Ekologicky odpovědné</h4>
+              <p>Pomoz planetě snížením odpadu</p>
+            </div>
+          </div>
+        </div>
+        <div className="auth-box">
+          <img src={logo} alt="Zlatá Lednice" className="auth-logo" />
+          <h1 className="app-title">Zlatá Lednice</h1>
+          <h2>Registrace</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleRegister}>
           <input
@@ -89,6 +121,7 @@ export default function Register({ onSwitchToLogin }) {
           <button type="submit">Registrovat se</button>
         </form>
         <p>Už máš účet? <button onClick={onSwitchToLogin} className="link-btn">Přihláš se</button></p>
+      </div>
       </div>
     </div>
   );

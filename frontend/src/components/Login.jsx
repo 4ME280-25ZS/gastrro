@@ -47,10 +47,42 @@ export default function Login({ onSwitchToRegister }) {
 
   return (
     <div className="auth-container">
-      <div className="auth-box">
-        <img src={logo} alt="Zlatá Lednice" className="auth-logo" />
-        <h1 className="app-title">Zlatá Lednice</h1>
-        <h2>Přihlášení</h2>
+      <div className="auth-layout">
+        <div className="auth-benefits">
+          <h3>Proč se přihlásit?</h3>
+          <div className="benefit-item">
+            <span className="benefit-icon">✅</span>
+            <div>
+              <h4>Sleduj expiraci jídla</h4>
+              <p>Už nikdy nezapomeň na potraviny v lednici</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">🍳</span>
+            <div>
+              <h4>Personalizované recepty</h4>
+              <p>Doporučení na míru tvým surovinám</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">💰</span>
+            <div>
+              <h4>Přehled o úsporách</h4>
+              <p>Sleduj, kolik ušetříš nevyhazováním jídla</p>
+            </div>
+          </div>
+          <div className="benefit-item">
+            <span className="benefit-icon">📱</span>
+            <div>
+              <h4>Kdykoliv a kdekoliv</h4>
+              <p>Přístup z jakéhokoliv zařízení</p>
+            </div>
+          </div>
+        </div>
+        <div className="auth-box">
+          <img src={logo} alt="Zlatá Lednice" className="auth-logo" />
+          <h1 className="app-title">Zlatá Lednice</h1>
+          <h2>Přihlášení</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleLogin}>
           <input
@@ -70,6 +102,7 @@ export default function Login({ onSwitchToRegister }) {
           <button type="submit">Přihlásit se</button>
         </form>
         <p>Nemáš účet? <button onClick={onSwitchToRegister} className="link-btn">Registruj se</button></p>
+      </div>
       </div>
     </div>
   );
